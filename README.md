@@ -15,12 +15,11 @@
 
 <div>
 <a href="https://github.com/SantanderNycz">
-  <style scoped>
-      img {
+<style> .imagem {
         border-radius: 2px;
       }
-    </style>
-<img loading="lazy" height="115em" width=115 src="https://i.scdn.co/image/ab6761610000e5eb8073189cf1150d84de4404da"/>
+</style>
+<img class="imagem" loading="lazy" height="115em" width=115 src="https://i.scdn.co/image/ab6761610000e5eb8073189cf1150d84de4404da"/>
 <p>Léo Santander Nycz</p>
   
 </div>
