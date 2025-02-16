@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="./styles/mobile.css">
-  <title>Challenge Alura Geek</title>
+  <title>Pool Geek</title>
 </head>
 
 <body>
@@ -108,13 +108,14 @@
         <input class="formulario__campos" type="text" placeholder="Nome..." maxlength="18">
         <input class="formulario__campos" type="text" placeholder="Valor..." maxlength="18">
         <input class="formulario__campos" type="url" placeholder="Imagem...">
+
+        <div class="formulario__botoes">
+          <input class="botoes--guardar" type="submit" value="Guardar">
+        </div>
+        <div>
+          <input class="botoes--limpar" type="reset" value="Limpar">
+        </div>
       </form>
-      <div class="formulario__botoes">
-        <input class="botoes--guardar" type="submit" value="Guardar">
-      </div>
-      <div>
-        <input class="botoes--limpar" type="reset" value="Limpar">
-      </div>
     </section>
 
   </main>
@@ -135,10 +136,7 @@
     </div>
   </footer>
 
-  <script src="JavaScript/conectaAPI.js" type="module"></script>
-  <script src="JavaScript/mostraFoto.js" type="module"></script>
-  <script src="JavaScript/criaFoto.js" type="module"></script>
-  <script src="JavaScript/apagaCard.js" type="module"></script>
+  <script src="./JavaScript/script.js"></script>
 </body>
 
 </html>
