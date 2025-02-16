@@ -3,7 +3,7 @@ import { apagarCard } from "./apagaCard.js";
 
 const lista = document.querySelector("[data-lista]");
 
-/* id adicionado como argumento, para o attributo customizado data-id para armazenar o id do objeto associado ao card*/
+/* id adicionado como argumento, para o atributo customizado data-id para armazenar o id do objeto associado ao card*/
 function constroiCard(imagem, nome, valor, id) {
   const card = document.createElement("div");
   card.className = "card";
@@ -11,17 +11,17 @@ function constroiCard(imagem, nome, valor, id) {
     "data-id",
     id
   ); /* adicionado attributo para armazenar o id do card */
-  card.innerHTML = ` <div class="imagem">
+  card.innerHTML = ` <div class="box__card">
         <img src="${imagem}" alt="">
-        <h4>${nome}</h4>
+        <h3>${nome}</h3>
     </div>
 
-    <div class="frame2">
+    <div class="preco">
         <p>$ ${valor}</p>
-            <img id="lixo" src="images/lixeira.png">
+            <img id="lixeira" src="./assets/lixeira.png">
 </div>
     `;
-  const lixeira = card.querySelector("#lixo");
+  const lixeira = card.querySelector("#lixeira");
   lixeira.addEventListener("click", async () => {
     const id = card.getAttribute("data-id");
     card.remove();
@@ -32,11 +32,20 @@ function constroiCard(imagem, nome, valor, id) {
 }
 
 async function listaFotos() {
-  const listaApi = await conectaApi.listaFotos();
-  listaApi.forEach((elemento) =>
-    lista.appendChild(
-      constroiCard(elemento.imagem, elemento.nome, elemento.valor, elemento.id)
-    )
-  );
+  try {
+    const listaApi = await conectaApi.listaFotos();
+    listaApi.forEach((elemento) =>
+      lista.appendChild(
+        constroiCard(
+          elemento.imagem,
+          elemento.nome,
+          elemento.valor,
+          elemento.id
+        )
+      )
+    );
+  } catch (erro) {
+    console.error(erro);
+  }
 }
 listaFotos();
