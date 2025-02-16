@@ -2,9 +2,7 @@
 
 .rodape {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
   background-color: #20252c;
   padding: 32px;
 }
@@ -12,8 +10,7 @@
 .container__primeiro {
   display: flex;
   align-items: center;
-  height: 56px;
-  width: 374px;
+  justify-content: center;
 }
 
 .rodape__img {
@@ -29,12 +26,15 @@
   color: rgba(229, 229, 229, 1);
 }
 
-.container__secundo {
-  width: 269px;
-  height: 48px;
+.container__segundo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.rodape__msg {
+.rodape__msg,
+.rodape__msg__segunda {
   font-family: "IBM Plex Mono";
   font-weight: 400;
   font-size: 16px;
@@ -42,13 +42,4 @@
   text-align: center;
   color: rgba(255, 255, 255, 1);
   padding-bottom: 10px;
-}
-
-.rodape__msg__segunda {
-  font-family: "IBM Plex Mono";
-  font-weight: 200;
-  font-size: 16px;
-  line-height: 16px;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
 }
