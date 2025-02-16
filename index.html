@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/mobile.css">
+  <title>Challenge Alura Geek</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <img class="cabecalho__img" src="./assets/image 1.png" alt="logo alura geek">
+    <h1 class="cabecalho__titulo">Pool<span class="logo">Geek</span></h1>
+  </header>
+
+  <main class="main">
+    <section class="produtos">
+      <h1 class="titulo__produtos">
+        MEUS PRODUTOS
+      </h1>
+      <div class="produtos__container">
+        <div class="cards__container">
+          <div class="card">
+            <img class="box__card" src="assets/deadpool alemao.jpg" alt="deadpool alemao">
+            <p class="img__nome">Lederhosen</p>
+            <div class="preco">
+              <p>$ 50,00</p>
+            </div>
+            <img class="lixeira" src="./assets/lixeira.png" alt="lixeira" height="32px" width="32px">
+          </div>
+          <div class="card">
+            <img class="box__card" src="assets/deadpool barista.jpg" alt="deadpool barista">
+            <p class="img__nome">Barista</p>
+            <div class="preco">
+              <p>$ 60,00</p>
+            </div>
+            <img class="lixeira" src="./assets/lixeira.png" alt="lixeira" height="32px" width="32px">
+          </div>
+          <div class="card">
+            <img class="box__card" src="assets/deadpool aniversario.jpg" alt="deadpool aniversario">
+            <p class="img__nome">30 anos</p>
+            <div class="preco">
+              <p>$ 30,00</p>
+            </div>
+            <img class="lixeira" src="./assets/lixeira.png" alt="lixeira" height="32px" width="32px">
+          </div>
+          <div class="card">
+            <img class="box__card" src="assets/dinopool.jpg" alt="dinopool">
+            <p class="img__nome">Dinopool</p>
+            <div class="preco">
+              <p>$ 120,00</p>
+            </div>
+            <img class="lixeira" src="./assets/lixeira.png" alt="lixeira" height="32px" width="32px" height="32px" width="32px">
+          </div>
+          <div class="card">
+            <img class="box__card" src="assets/deadpool pijama.jpg" alt="deadpool pijama">
+            <p class="img__nome">Pijaminha</p>
+            <div class="preco">
+              <p>$ 70,00</p>
+            </div>
+            <img class="lixeira" src="./assets/lixeira.png" alt="lixeira" height="32px" width="32px">
+          </div>
+          <div class="card">
+            <img class="box__card" src="assets/deadpool lucha.jpg" alt="deadpool lucha">
+            <p class="img__nome">Lucha Libre</p>
+            <div class="preco">
+              <p>$ 110,00</p>
+            </div>
+            <img class="lixeira" src="./assets/lixeira.png" alt="lixeira" height="32px" width="32px">
+          </div>
+          <div class="card">
+            <img class="box__card" src="assets/deadpool roqueiro.jpg" alt="deadpool roqueiro">
+            <p class="img__nome">Heavy Metal</p>
+            <div class="preco">
+              <p>$ 80,00</p>
+            </div>
+            <img class="lixeira" src="./assets/lixeira.png" alt="lixeira" height="32px" width="32px">
+          </div>
+          <div class="card">
+            <img class="box__card" src="assets/deadpool turista.jpg" alt="deadpool turista">
+            <p class="img__nome">Turista</p>
+            <div class="preco">
+              <p>$ 40,00</p>
+            </div>
+            <img class="lixeira" src="./assets/lixeira.png" alt="lixeira" height="32px" width="32px">
+          </div>
+          <div class="card">
+            <img class="box__card" src="assets/deadpool neve.jpg" alt="deadpool neve">
+            <p class="img__nome">Com Casaquinho</p>
+            <div class="preco">
+              <p>$ 30,00</p>
+            </div>
+            <img class="lixeira" src="./assets/lixeira.png" alt="lixeira" height="32px" width="32px">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container__form">
+      <h1 class="formulario__titulo">ADICIONAR PRODUTO:</h1>
+      <form class="formulario">
+        <input class="formulario__campos" type="text" placeholder="Nome..." maxlength="18">
+        <input class="formulario__campos" type="text" placeholder="Valor..." maxlength="18">
+        <input class="formulario__campos" type="url" placeholder="Imagem...">
+      </form>
+      <div class="formulario__botoes">
+        <input class="botoes--guardar" type="submit" value="Guardar">
+      </div>
+      <div>
+        <input class="botoes--limpar" type="reset" value="Limpar">
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container__primeiro">
+      <img class="rodape__img" src="./assets/image 1.png" alt="rodapé">
+      <h1 class="rodape__titulo">Pool<span class="logo">Geek</span></h1>
+    </div>
+
+    <div class="container__secundo">
+      <h3 class="rodape__msg">
+        Desenvolvido por Leonardo Santander Nycz
+      </h3>
+      <h4 class="rodape__msg__segunda">
+        Alura 2024
+      </h4>
+    </div>
+  </footer>
+  <script src="JavaScript/conectaAPI.js" type="module"></script>
+  <script src="JavaScript/MostraFoto.js" type="module"></script>
+  <script src="JavaScript/criaFoto.js" type="module"></script>
+  <script src="JavaScript/apagarCard.js" type="module"></script>
+</body>
+
+</html>
